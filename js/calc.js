@@ -77,7 +77,8 @@ console.log(
     // ... (same code as before)
   });
   
-  window.onerror = function () {
+  window.onerror = function (e) {
+      e.preventDefault();
     alert("PLEASE INPUT VALID EXPRESSION");
     screenValue = "";
     screen.value = screenValue;
