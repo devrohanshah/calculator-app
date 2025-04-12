@@ -1,6 +1,6 @@
 # NeoCalc - Advanced Calculator
 
-[![NeoCalc Banner](https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png)](https://postimg.cc/DmfjNktZ).
+[![NeoCalc Banner](https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png)](https://postimg.cc/DmfjNktZ)
 
 <div align="center">
   
@@ -24,8 +24,6 @@
 ## 🖥️ Live Demo
 
 Experience NeoCalc: [Live Demo](https://devrohanshah.github.io/calculator-app/)
-
-![NeoCalc Demo](https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22devrohanshah.github.io_calculator-app_.png%22%2C%22type%22%3A%22image%2Fpng%22%2C%22signedurl_expire%22%3A%222028-04-11T10%3A06%3A44.031Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F4d05624966984495%2Fdevrohanshah.github.io_calculator-app_.png%3FExpires%3D1839060404%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DNiTfEM86dty0GuLlJW-kcGwRD1FD62i6TJ51Mx-v5KocVbzjeb2xSVbY3vjffveAh9Ydb8jtfVovN86VuVCi-wPXlQjLMDbKWxvGmOfcohgoR4fzoYpI1CpWk7dCjVaAr0dw4NTXdvMXKZE68zqBH4fkWTncKSmCq8irVx1AHi~308le2xYD3pb2e-dbz6IGKq-kn2KIcXZ5SBw2XxJZzdwEEAuVOK5U3H1F~kxlyMqNl5av15r5TDmQwMI-Lmeb7wlVVEpUfgfRuewDeB7mLH11xIA1Nj41EWdKJri9H~wuShJmpWKHTRw1NxWnA~A7b8L41uX8Eki~M9604uM3rw__%22%7D)
 
 ## 🚀 Getting Started
 
