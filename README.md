@@ -1,6 +1,8 @@
 # NeoCalc - Advanced Calculator
 
-[![NeoCalc Banner](https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png)]('https://postimg.cc/DmfjNktZ' {width=40px height=400px})
+<a href="https://postimg.cc/DmfjNktZ">
+  <img src="https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png" alt="NeoCalc Banner" width="600"/>
+</a>
 
 <div align="center">
   
