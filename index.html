@@ -47,12 +47,23 @@
                     </label>
                 </div>
                 <h1 class="app-title">Neo<span>Calc</span></h1>
-                <button id="historyButton" class="history-button" aria-label="View calculation history">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2v10l4.24 4.24"></path>
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </button>
+                <div class="header-controls">
+                    <button id="scientificToggle" class="scientific-toggle-btn" aria-label="Toggle Scientific Calculator">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 11H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2z"/>
+                            <path d="M20 11h-5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2z"/>
+                            <path d="M20 22h-5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2z"/>
+                            <path d="M9 22H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2z"/>
+                        </svg>
+                        <span class="toggle-text">SCI</span>
+                    </button>
+                    <button id="historyButton" class="history-button" aria-label="View calculation history">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v10l4.24 4.24"></path>
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <div class="calculator-display">
@@ -85,6 +96,49 @@
                 <button class="btn number-btn" data-action=".">.</button>
                 <button class="btn operator-btn" data-action="/">÷</button>
                 <button class="btn equals-btn" data-action="=">=</button>
+            </div>
+
+            <!-- Scientific Calculator Keypad -->
+            <div class="scientific-keypad" id="scientificKeypad">
+                <!-- First Row - Memory & Angle Functions -->
+                <button class="btn sci-btn memory-btn" data-action="mc">MC</button>
+                <button class="btn sci-btn memory-btn" data-action="mr">MR</button>
+                <button class="btn sci-btn memory-btn" data-action="m+">M+</button>
+                <button class="btn sci-btn memory-btn" data-action="m-">M-</button>
+                <button class="btn sci-btn memory-btn" data-action="ms">MS</button>
+                <button class="btn sci-btn angle-btn" data-action="deg">DEG</button>
+
+                <!-- Second Row - Advanced Functions -->
+                <button class="btn sci-btn function-btn" data-action="2nd">2nd</button>
+                <button class="btn sci-btn function-btn" data-action="pi">π</button>
+                <button class="btn sci-btn function-btn" data-action="e">e</button>
+                <button class="btn sci-btn function-btn" data-action="factorial">n!</button>
+                <button class="btn sci-btn function-btn" data-action="mod">mod</button>
+                <button class="btn sci-btn function-btn" data-action="frac">1/x</button>
+
+                <!-- Third Row - Powers & Roots -->
+                <button class="btn sci-btn function-btn" data-action="x2">x²</button>
+                <button class="btn sci-btn function-btn" data-action="x3">x³</button>
+                <button class="btn sci-btn function-btn" data-action="xy">x^y</button>
+                <button class="btn sci-btn function-btn" data-action="sqrt">√x</button>
+                <button class="btn sci-btn function-btn" data-action="cbrt">∛x</button>
+                <button class="btn sci-btn function-btn" data-action="nthroot">ⁿ√x</button>
+
+                <!-- Fourth Row - Trigonometric Functions -->
+                <button class="btn sci-btn trig-btn" data-action="sin">sin</button>
+                <button class="btn sci-btn trig-btn" data-action="cos">cos</button>
+                <button class="btn sci-btn trig-btn" data-action="tan">tan</button>
+                <button class="btn sci-btn trig-btn" data-action="csc">csc</button>
+                <button class="btn sci-btn trig-btn" data-action="sec">sec</button>
+                <button class="btn sci-btn trig-btn" data-action="cot">cot</button>
+
+                <!-- Fifth Row - Logarithmic Functions -->
+                <button class="btn sci-btn log-btn" data-action="ln">ln</button>
+                <button class="btn sci-btn log-btn" data-action="log">log</button>
+                <button class="btn sci-btn log-btn" data-action="exp">e^x</button>
+                <button class="btn sci-btn log-btn" data-action="10x">10^x</button>
+                <button class="btn sci-btn log-btn" data-action="abs">|x|</button>
+                <button class="btn sci-btn function-btn" data-action="rand">RND</button>
             </div>
         </div>
 
