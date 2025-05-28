@@ -1,7 +1,7 @@
 # NeoCalc - Advanced Calculator
 
 <a href="https://postimg.cc/gwDw6pW6">
-  <img src="https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png" alt="NeoCalc Banner" width="400"/>
+  <img src="https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png" alt="NeoCalc Banner" width="500"/>
 </a>
 <a href="https://postimg.cc/5H74V2Jp">
   <img src="https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png" alt="NeoCalc Banner" width="400"/>
