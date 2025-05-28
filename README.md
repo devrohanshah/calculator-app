@@ -10,7 +10,7 @@
 
 <p align="center">A modern, feature-rich calculator with history tracking and elegant dark/light mode.</p>
 
-##   **Preview
+##   ***Preview***
 <a href="https://postimg.cc/gwDw6pW6">
   <img src="https://i.postimg.cc/B6W2kZ7N/preview.png" alt="NeoCalc Banner" width="450" height="490"/>
 </a>
