@@ -1,6 +1,6 @@
 # NeoCalc - Advanced Calculator
 
-[![NeoCalc Banner](https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png)](https://postimg.cc/DmfjNktZ)
+[![NeoCalc Banner](https://i.postimg.cc/BZHrXJpx/devrohanshah-github-io-calculator-app.png)](https://postimg.cc/DmfjNktZ = 250*250)
 
 <div align="center">
   
