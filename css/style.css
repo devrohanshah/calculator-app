@@ -516,63 +516,309 @@ body.dark-mode .app-footer a {
   color: var(--accent-color-dark);
 }
 
-/* Responsive Design */
+/* Scientific Calculator Styles */
+.header-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.scientific-toggle-btn {
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all var(--transition-speed);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.scientific-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.scientific-toggle-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.scientific-toggle-btn.active {
+  background: linear-gradient(145deg, #ff6b6b, #ee5a24);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+}
+
+.toggle-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Scientific Keypad */
+.scientific-keypad {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05));
+  border-radius: var(--border-radius-md);
+  border: 2px solid rgba(102, 126, 234, 0.1);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-20px);
+}
+
+.scientific-keypad.active {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+}
+
+.calculator-container.scientific-mode {
+  max-width: 600px;
+  transition: max-width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scientific Button Styles */
+.sci-btn {
+  height: 2.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: var(--border-radius-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.sci-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.sci-btn:hover::before {
+  left: 100%;
+}
+
+/* Memory Buttons - Orange/Red Theme */
+.memory-btn {
+  background: linear-gradient(145deg, #ff6b6b, #ee5a24);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
+}
+
+.memory-btn:hover {
+  background: linear-gradient(145deg, #ff5252, #e53935);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+/* Angle Button - Purple Theme */
+.angle-btn {
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.angle-btn:hover {
+  background: linear-gradient(145deg, #5a67d8, #6b46c1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.angle-btn.active {
+  background: linear-gradient(145deg, #4c51bf, #553c9a);
+}
+
+/* Trigonometric Buttons - Blue Theme */
+.trig-btn {
+  background: linear-gradient(145deg, #4299e1, #3182ce);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(66, 153, 225, 0.2);
+}
+
+.trig-btn:hover {
+  background: linear-gradient(145deg, #3182ce, #2c5282);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+}
+
+/* Logarithmic Buttons - Green Theme */
+.log-btn {
+  background: linear-gradient(145deg, #48bb78, #38a169);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(72, 187, 120, 0.2);
+}
+
+.log-btn:hover {
+  background: linear-gradient(145deg, #38a169, #2f855a);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+/* Scientific Function Buttons - Enhanced */
+.scientific-keypad .function-btn {
+  background: linear-gradient(145deg, #a78bfa, #8b5cf6);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(167, 139, 250, 0.2);
+}
+
+.scientific-keypad .function-btn:hover {
+  background: linear-gradient(145deg, #8b5cf6, #7c3aed);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
+}
+
+/* Casio-Style LCD Display Enhancement */
+.calculator-container.scientific-mode .calculator-display {
+  background: linear-gradient(145deg, #1a202c, #2d3748);
+  color: #e2e8f0;
+  border: 3px solid #4a5568;
+  position: relative;
+}
+
+.calculator-container.scientific-mode .calculator-display::before {
+  content: 'CASIO';
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #a0aec0;
+  opacity: 0.7;
+}
+
+.calculator-container.scientific-mode .calculator-screen {
+  color: #00ff41;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+/* Dark Mode Scientific Styles */
+body.dark-mode .scientific-keypad {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.05));
+  border-color: rgba(121, 80, 242, 0.2);
+}
+
+body.dark-mode .scientific-toggle-btn {
+  background: linear-gradient(145deg, #7950f2, #6c5ce7);
+  box-shadow: 0 2px 8px rgba(121, 80, 242, 0.3);
+}
+
+body.dark-mode .scientific-toggle-btn.active {
+  background: linear-gradient(145deg, #fd79a8, #e84393);
+}
+
+/* Animation for mode switching */
+@keyframes expandScientific {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0);
+  }
+}
+
+@keyframes collapseScientific {
+  from {
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.scientific-keypad.expanding {
+  animation: expandScientific 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.scientific-keypad.collapsing {
+  animation: collapseScientific 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Memory indicator */
+.memory-indicator {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(145deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: scale(0);
+  transition: all var(--transition-speed);
+}
+
+.memory-indicator.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive adjustments for scientific mode */
+@media (max-width: 768px) {
+  .calculator-container.scientific-mode {
+    max-width: 100%;
+  }
+  
+  .scientific-keypad {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+  }
+  
+  .sci-btn {
+    height: 2.5rem;
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 480px) {
-  .calculator-container {
-      padding: 1rem;
+  .scientific-keypad {
+    padding: 0.8rem;
   }
   
-  .calculator-screen {
-      font-size: 2rem;
+  .sci-btn {
+    height: 2.2rem;
+    font-size: 0.7rem;
   }
   
-  .btn {
-      height: 3rem;
-      font-size: 1.1rem;
+  .header-controls {
+    gap: 0.3rem;
   }
   
-  .operator-btn {
-      font-size: 1.3rem;
+  .scientific-toggle-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
   }
-  
-  .equals-btn {
-      font-size: 1.5rem;
-  }
-}
-
-@media (max-height: 700px) {
-  .calculator-keypad {
-      gap: 0.6rem;
-  }
-  
-  .btn {
-      height: 2.8rem;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 500px) {
-  .orientation-warning {
-      display: flex;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.calculator-container {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-/* Button Press Effect */
-.btn-pressed {
-  transform: scale(0.95);
-  opacity: 0.9;
-}
-
-/* Negative Number Styling */
-.negative {
-  color: #e03131;
 }
